@@ -5,10 +5,12 @@
 
 # 选择想体验的模式, 脚本会自动下载已有的预训练权重
 # 可选: 1.summer2winter_yosemite -> 季节迁移：夏到冬
+#      2.horse2zebra -> 普通马变斑马
+#      更多详见 "CycleGAN_OfficialNote.ipynb/Pretrained_models"
 selected_model="summer2winter_yosemite"
 
 # 下载官方预训练权重
-# bash ./scripts/download_cyclegan_model.sh "$selected_model"
+bash ./scripts/download_cyclegan_model.sh "$selected_model"
 
 # 测试脚本默认会去读 testA 里的图片作为输入源进行转换。
 # 记得去修改成你自己存放图片的地址
